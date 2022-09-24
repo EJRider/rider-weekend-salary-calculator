@@ -12,3 +12,25 @@ function onDelete(){
 
     $(this).parent().parent().remove();
 }
+
+function sendData(event){
+    event.preventDefault();
+    console.log('testing sendData');
+
+    let workerInfo = {
+        firstName: $('#firstName').val(),
+        lastName: $('#lastName').val(),
+        iD: $('#iD').val(),
+        title: $('#position').val(),
+        annualSalary: $('#annualSalary').val()
+    }
+
+    cleanUp();
+
+    workers.push(workerInfo);
+
+    console.log(workers);
+
+    render();
+
+}
