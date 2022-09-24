@@ -62,3 +62,11 @@ function render(){
         `)
     }
 }
+
+function cleanUp(){
+    $('#firstName').val('');
+    $('#lastName').val('');
+    $('#iD').val('');
+    $('#position').val('');
+    $('#annualSalary').val('');
+}
