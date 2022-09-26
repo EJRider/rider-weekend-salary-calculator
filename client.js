@@ -55,7 +55,7 @@ function render(){
                 <td><button class="delete" type="button">Delete</button></td>
             </tr>
         `)
-        reportedMoney += ((worker.annualSalary/1)/12);
+        reportedMoney += (worker.annualSalary/12);
         $('#totalReported').empty();
         if(reportedMoney > 20000){ 
             $('#totalReported').css('background-color', 'red');
